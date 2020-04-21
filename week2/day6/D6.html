@@ -1,0 +1,168 @@
+<html>
+  <head>
+    <script>
+      /* EXERCISE 1
+            Write a function to change the document title of the page in something else
+            */
+
+      function changeTitle(newTitle) {
+        document.title = newTitle;
+      }
+
+      /* EXERCISE 2
+            Write a function to change the class of the H1 on a page in "myHeading"
+            */
+
+      function addClassToHeading() {
+        let heading = document.querySelector("#myHeading");
+        heading.className = "newClass";
+      }
+
+      /* EXERCISE 3
+            Write a function to change the text of only the p which are child of a div
+            */
+
+      function changePcontent() {
+        let paragraphs = document.querySelectorAll("p");
+        paragraphs.forEach((element, index) => {
+          element.innerText = `new paragraph ${index + 1}`;
+        });
+      }
+
+      /* EXERCISE 4
+            Write a function to change the destination of every link to https://www.google.com
+            */
+
+      function changeUrls() {
+        let urls = document.querySelectorAll("a");
+        urls.forEach((element, index) => {
+          element.href = "https://www.google.com";
+          element.innerText = "This link goes to Google";
+        });
+      }
+
+      /* EXERCISE 5
+            Write a function to add a new item ONLY to the second list
+            */
+
+      function addToTheSecond(content) {
+        let lists = document.querySelectorAll("ul");
+        let secondList = lists[1];
+        let li = document.createElement("li");
+        li.innerText = "new item";
+        secondList.appendChild(li);
+      }
+
+      /* EXERCISE 6
+           Write a function to add a second paragraph to the div
+            */
+
+      function addParagraph(content) {
+        let divs = document.querySelectorAll("div");
+        divs.forEach((div, index) => {
+          let p = document.createElement("p");
+          p.innerText = `new content for div ${index} is : ${
+            content + " " + index
+          }`;
+          div.appendChild(p);
+        });
+      }
+
+      /* EXERCISE 7
+           Write a function to make the first UL disappear
+            */
+
+      function firstUlDisappear() {
+        let firstUl = document.querySelector("ul");
+        firstUl.style.visibility = "hidden";
+      }
+
+      /* EXERCISE 8
+            Write a function to make the background of every UL green
+            */
+
+      function paintItGreen() {
+        let uls = document.querySelectorAll("ul");
+        uls.forEach((element, index) => {
+          element.style.background = `green`;
+        });
+      }
+
+      /* EXERCISE 9
+            Make the heading of the page changing color every time the user clicks on it
+            */
+
+      function makeItClickable() {
+        let colors = ["red", "green", "blue","orange","brown","purple","pink"];
+        let headings = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let clicked = 0;
+        headings.forEach((heading) => {
+          heading.onclick = function () {
+            
+            heading.style.background = colors[clicked % colors.length];
+            heading.style.cursor ="pointer";
+            clicked++;
+          
+          };
+        });
+      }
+
+      /* EXERCISE 10
+          Create a new welcome alert message when the page successfully loads
+            */
+
+      window.onload = function () {
+        changeTitle("Strive Javascript Course");
+        changePcontent();
+        changeUrls();
+        addToTheSecond();
+        addParagraph("Strive School");
+        firstUlDisappear();
+        paintItGreen();
+        makeItClickable();
+      };
+
+      /* EXERCISE 11
+            Use HTML5 tags to divide sections, headers etc 
+            */
+    </script>
+
+    <style>
+      .myHeading {
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>This is the title of the page</h1>
+      <h2>This is the subtitle of the page</h2>
+    </div>
+
+    <div>
+      <hr />
+
+      <ul id="firstList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      <ul id="secondList">
+        <li>1st</li>
+        <li>2nd</li>
+        <li>3rd</li>
+      </ul>
+
+      <a href="strive.school">This link goes to Strive School</a>
+
+      <div>
+        <p>This text is just for the exercise</p>
+      </div>
+    </div>
+
+    <div>
+      <p>And this text is just for the exercise too!</p>
+    </div>
+  </body>
+</html>
