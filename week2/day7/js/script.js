@@ -14,18 +14,21 @@ function calculate(){
     try{
         //result.innerText=eval(result.innerText);
         let expression = resultText.replace("×","*").replace("÷","/");
-        result.innerText =eval(expression).toFixed(9);
+        result.innerText =eval(expression).toFixed(2);
         updateHistory(eval(expression))
     }
     catch(e){
-        result.innerText=e.message;
+        result.innerText="Math Error"
     }
 }
 function updateHistory(result){
-    let historyNode = document.querySelector("#history");
-    let div = document.createElement("div");
-    div.innerText=result;
-    historyNode.appendChild(div);
+    if(!history.includes(result)){
+        let historyNode = document.querySelector("#history");
+        let div = document.createElement("div");
+        div.innerText=result;
+        history.push(result)
+        historyNode.appendChild(div);
+    }
 }
 function createKeyboard(){
     let result = document.querySelector("#result");
@@ -50,7 +53,10 @@ function createKeyboard(){
                     historyNode.innerHTML =""
                }
                else{
-                    result.innerText=result.innerText+button
+                   
+                result.innerText=result.innerText+button
+                     
+                   
                }
             }
             col.appendChild(div);
@@ -62,7 +68,10 @@ function createKeyboard(){
     let row = document.createElement("td");
     let dot = document.createElement("td");
     row.onclick=function(){
-        calculate()
+        let chars = result.innerText.split("")
+       if(chars.includes("+")||chars.includes("-")||chars.includes("÷")||chars.includes("×")){
+           calculate()
+       }
     }
     row.colSpan="2"
     dot.colSpan="2"
