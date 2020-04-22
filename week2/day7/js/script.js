@@ -14,7 +14,7 @@ function calculate(){
     try{
         //result.innerText=eval(result.innerText);
         let expression = resultText.replace("×","*").replace("÷","/");
-        result.innerText =eval(expression);
+        result.innerText =eval(expression).toFixed(9);
         updateHistory(eval(expression))
     }
     catch(e){
