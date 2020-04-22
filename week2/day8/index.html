@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style.css"></link>
+    <script src="./js/tasks.js"></script>
+</head>
+<body>
+    <div id="container">
+        <div  id="header">
+            <i style="font-size:40pt" class="fa fa-check-circle"></i>
+            <h1>Task List</h1>
+        </div>
+        <div id="toolbar">
+            <button id="sort" class="button">
+                <i class="fa fa-sort-alpha-asc" aria-hidden="true"></i>
+                Sort</button>
+        </div>
+        <div id="tasks">
+            <ul id="list">
+                <li>
+                    <input class="checkbox" type="checkbox"/>
+                    <div class="item-title">Task 1</span>    
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div id="task-list-actions">
+        <input type="color" id="color" value="#b125da"/>
+        <input placeholder="Task title goes here" id="new-task"/>
+        <button class="button" id="add-button">+ Add</button>
+    </div>
+</body>
+</html>
