@@ -91,15 +91,28 @@
       /* EXERCISE 9
             Make the heading of the page changing color every time the user clicks on it
             */
-
+      function goBackTo2000s(){
+        setInterval(()=>{
+          let colors = ["red", "green", "blue","orange","brown","purple","pink"];
+        let headings = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
+        let clicked = 0;
+        headings.forEach((heading,index) => {
+          let color = `rgb(${Math.ceil(Math.random()*255)},${Math.ceil(Math.random()*255)},${Math.ceil(Math.random()*255)})`
+            heading.style.background = color;
+            heading.style.cursor ="pointer";
+            clicked++;
+        });
+        },100)
+      }
       function makeItClickable() {
         let colors = ["red", "green", "blue","orange","brown","purple","pink"];
         let headings = document.querySelectorAll("h1,h2,h3,h4,h5,h6");
         let clicked = 0;
-        headings.forEach((heading) => {
+        
+        headings.forEach((heading,index) => {
           heading.onclick = function () {
-            
-            heading.style.background = colors[clicked % colors.length];
+            let color = `rgb(${Math.ceil(Math.random()*255)},${Math.ceil(Math.random()*255)},${Math.ceil(Math.random()*255)})`
+            heading.style.background = color;
             heading.style.cursor ="pointer";
             clicked++;
           
@@ -120,6 +133,8 @@
         firstUlDisappear();
         paintItGreen();
         makeItClickable();
+        goBackTo2000s()
+       // alert("Welcome!")
       };
 
       /* EXERCISE 11
