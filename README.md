@@ -10,9 +10,9 @@
   
 ### WEEK 2
   * Day 5: [HTML Recap]( https://github.com/ubeytdemirr/strive-school-homeworks/blob/master/week2/day5/Day5_ubeyt_demir.html)
-  * Day 6 : [Manipulating DOM]( https://github.com/ubeytdemirr/strive-school-homeworks/blob/master/week2/day6/D6.html)
-  * Day 7 : [Manipulating DOM]( https://github.com/ubeytdemirr/strive-school-homeworks/tree/master/week2/day7)
+  * Day 6 : [Manipulating DOM I]( https://github.com/ubeytdemirr/strive-school-homeworks/blob/master/week2/day6/D6.html)
+  * Day 7 : [Manipulating DOM II]( https://github.com/ubeytdemirr/strive-school-homeworks/tree/master/week2/day7)
     * [Demo : Calculator]( https://striveday7jscalculator.imfast.io/)
     * [Demo : Task List ]( https://strivetasklist.imfast.io/)
-  * Day 8 : [Manipulating DOM] (https://github.com/ubeytdemirr/strive-school-homeworks/tree/master/week2/day8/calendar)
+  * Day 8 : [Manipulating DOM III](https://github.com/ubeytdemirr/strive-school-homeworks/tree/master/week2/day8/calendar)
     * [Demo : Calendar] : (https://strivecalendar.imfast.io/)
