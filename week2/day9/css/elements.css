@@ -1,0 +1,101 @@
+button{
+    outline:none;
+    height:40px;
+    display:flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    min-width:80px;
+    border:1px solid #EF3B59;
+    background-color:white;
+    color:#EF3B59;
+    font-weight: bold;
+    font-family: inherit;
+   
+    cursor:pointer;
+}
+button:hover{
+    background-color:#EF3B59;
+    border:none;
+    color:white;
+}
+input{
+    flex-grow:1;
+    padding:10px;
+    outline:none;
+    width:98%;
+    margin-left:5px;
+    font-family: inherit;
+    font-weight: bold;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+label{
+    margin-left:5px;
+    font-weight: bold;
+}
+table{
+    width:99.5%;
+    height: 100%;
+    margin-left:5px;
+    border-top:1px solid lightgrey;
+    border-right:1px solid lightgrey;
+    
+}
+tr{
+   border-left:1px solid lightgrey;
+}
+td{
+    border-left:1px solid lightgrey;
+    border-bottom:1px solid lightgrey;
+    padding:5px;
+}
+h1,h2,h3,h4,h5,h6{
+    padding:0;
+    margin:0;
+}
+#navbar{
+    background-color:#24292E;
+    color:white;
+    min-height: 50px;
+    padding:10px 30px;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    -webkit-box-shadow: -8px 13px 56px 0px rgba(227,218,227,0.4);
+    -moz-box-shadow: -8px 13px 56px 0px rgba(227,218,227,0.4);
+    box-shadow: -8px 13px 56px 0px rgba(227,218,227,0.4);
+}
+#brand{
+    flex-grow: 1;
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+#logo{
+    height:35px;
+}
+
+input[type=radio]{
+
+}
+
+select{
+    flex-grow:1;
+    padding:10px;
+    outline:none;
+    width:100%;
+    margin-left:5px;
+    font-family: inherit;
+    font-weight: bold;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+select option{
+    padding:10px;
+
+}
+

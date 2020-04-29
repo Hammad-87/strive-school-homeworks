@@ -1,0 +1,24 @@
+.center{
+    padding:5px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+.space-between{
+    margin:5px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+.row{
+    flex-direction: row;
+}
+.col{
+    flex-direction: column;
+}
+.borderless{
+    border:none;
+}
+.container{
+    padding:30px;
+}
