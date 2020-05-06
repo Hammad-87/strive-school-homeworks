@@ -1,0 +1,53 @@
+/*ex-1*/
+
+h1 {
+  border: 1px solid red;
+}
+
+/*
+ex-2
+*/
+nav * {
+  border: 1px solid blue;
+}
+
+/*ex-5*/
+nav a:nth-child(even) {
+  background-color: brown;
+}
+/*ex-4*/
+
+.blog-post:first-child {
+  border: 1px solid red;
+}
+
+/*ex-6*/
+
+.blog-post:nth-child(4n) {
+  border: 3px solid red;
+}
+/*ex-7*/
+
+.list-unstyled li {
+  border: 1px solid blue;
+}
+
+/*ex-3*/
+.lead a {
+  border: 1px solid green;
+}
+
+.blog-post .blog-post-meta:nth-child(2n) a[href="#"] {
+  border: 3px solid blue;
+}
+
+/*ex-9*/
+
+.blog-footer a[href="#"] {
+  border: 1px solid purple;
+}
+
+/*ex-10*/
+.blog-footer {
+  border: 2px solid green;
+}
