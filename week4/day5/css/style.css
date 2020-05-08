@@ -1,0 +1,221 @@
+.card {
+  max-width: 250px;
+  min-height: 200px;
+  background-color: white;
+  -webkit-box-shadow: -3px 3px 6px 0px rgba(196, 190, 196, 1);
+  -moz-box-shadow: -3px 3px 6px 0px rgba(196, 190, 196, 1);
+  box-shadow: -3px 3px 6px 0px rgba(196, 190, 196, 1);
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.card:hover {
+  -webkit-box-shadow: -3px 3px 21px 0px rgba(196, 190, 196, 1);
+  -moz-box-shadow: -3px 3px 21px 0px rgba(196, 190, 196, 1);
+  box-shadow: -3px 3px 21px 0px rgba(196, 190, 196, 1);
+}
+.card:hover .add-to-cart-button {
+  display: block;
+}
+.card:hover .platforms {
+  visibility: hidden;
+}
+.card-media {
+}
+.card-image {
+  object-fit: cover;
+  width: 100%;
+}
+.card-title {
+  padding: 10px;
+}
+.card-footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  min-height: 30px;
+}
+.discount {
+  background-color: #78387b;
+  padding: 5px;
+  border-radius: 2px;
+  color: white;
+  font-weight: bold;
+}
+.prices {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1em;
+}
+.price-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.old-price {
+  font-size: 8pt;
+  text-decoration-line: line-through;
+  color: grey;
+}
+.new-price {
+  font-weight: bold;
+}
+.platforms {
+}
+.platform-icon {
+  color: grey;
+  font-size: 10pt;
+  margin-right: 1em;
+}
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #d8d8d8;
+}
+
+.add-to-cart-button {
+  margin: 5px;
+  border: none;
+  border-radius: 2px;
+  width: 40px;
+  height: 30px;
+  background: linear-gradient(-180deg, #c1ec51, #80b02a);
+  color: white;
+  font-size: 8pt;
+  display: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.nav-bg {
+  padding-top: 5px;
+
+  background: url("https://cdn1.vectorstock.com/i/1000x1000/36/55/abstract-polygon-background-dark-purple-polygonal-vector-21523655.jpg");
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+nav {
+  background-color: #000;
+  opacity: 0.8;
+  padding: 0px;
+  -webkit-box-shadow: -3px 3px 6px 0px rgba(196, 190, 196, 1);
+  -moz-box-shadow: -3px 3px 6px 0px rgba(196, 190, 196, 1);
+  box-shadow: -3px 3px 6px 0px rgba(196, 190, 196, 1);
+  font-size: 10pt;
+}
+
+#brand-logo {
+  width: 50px;
+}
+.navbar {
+  padding: 0px;
+  margin: 0px;
+}
+
+.nav-item:hover {
+  color: #78387b;
+}
+
+.nav-link i {
+  font-size: 5pt;
+}
+
+.icon-button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  outline: none;
+  font-size: 13pt;
+}
+
+.title-container {
+}
+.title {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.title-icon {
+  padding: 5px;
+}
+
+.title-text {
+  padding: 5px;
+  font-weight: bold;
+}
+.carousel-indicators li {
+  background-color: #78387b;
+  height: 5px;
+}
+.carousel-control-next i {
+  font-size: 25pt;
+  border: 2px solid grey;
+  background-color: #616161;
+  border-radius: 50%;
+  padding: 5px;
+  color: #fff;
+}
+.carousel-control-prev i {
+  background-color: #616161;
+  border-radius: 50%;
+  padding: 5px;
+  color: #fff;
+  border: 2px solid grey;
+  font-size: 25pt;
+}
+
+.carousel-triple {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.carousel-image {
+  width: 24%;
+  object-fit: cover;
+  padding-right: 10px;
+  opacity: 0.5;
+  height: 460px;
+  border-radius: 5px;
+}
+
+.carousel-image:hover {
+  opacity: 1;
+}
+.carousel-image-middle {
+  width: 52%;
+  padding-right: 10px;
+  object-fit: cover;
+  height: 460px;
+  border-radius: 5px;
+  margin-left: 10px;
+  margin-right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: white;
+  padding: 30px;
+}
+
+.carousel-indicators {
+  bottom: -70px;
+}
+
+.middle-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  bottom: 75px;
+  position: relative;
+  color: white;
+  padding-left: 50px;
+}
