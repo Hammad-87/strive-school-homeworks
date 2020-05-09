@@ -17,7 +17,7 @@
   - [Demo : Calculator](https://striveday7jscalculator.imfast.io/)
   - [Demo : Task List ](https://strivetasklist.imfast.io/)
 - Day 8 : [Manipulating DOM III](https://github.com/ubeytdemirr/strive-school-homeworks/tree/master/week2/day8/calendar)
-  - [Demo : Calendar] : (https://strivecalendar.imfast.io/)
+  - [Demo : Calendar](https://strivecalendar.imfast.io/)
 
 ### WEEK 3
 
