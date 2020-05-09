@@ -69,7 +69,7 @@ function detailPage(album) {
   root.innerHTML = "";
   let jumbotron = addElement(root, "div", {
     className: "jumbotron jumbotron-fluid",
-    style: `background:url(${album.cover});background-size:cover; background-position:50% 35%; height:400px;`,
+    style: `background:url(${album.cover});background-size:cover; background-position:50% 35%; height:400px; margin-top:50px;padding:30px;`,
   });
   let jumbotronContainer = addElement(jumbotron, "div", {
     className: "container",
