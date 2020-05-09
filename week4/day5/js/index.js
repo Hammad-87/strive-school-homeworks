@@ -3,14 +3,16 @@ window.onload = function () {
   HighLights();
   MainCarousel();
   VerticalCards();
-  GridCarousel();
+  //GridCarousel();
+  Releases();
+  Missed();
 };
 
 const NavBar = () => {
   let root = document.querySelector("#root");
   let navBG = addElement(root, "div", { className: "nav-bg" });
   let nav = addElement(root, "nav", {
-    className: "navbar navbar-expand-lg navbar-dark",
+    className: "navbar  navbar-expand-lg navbar-dark",
   });
   let navContainer = addElement(nav, "div", { className: "container" });
   let logoLink = addElement(navContainer, "a", {
@@ -57,7 +59,7 @@ const addTitle = (container, text, icon) => {
   });
   let title = addElement(titleContainer, "div", {
     className: "title",
-    style: "margin:10px 0px;",
+    style: "margin:50px 0px;",
   });
   let iconContainer = addElement(title, "div", { className: "title-icon" });
   let iconComponent = addElement(iconContainer, "i", {
@@ -142,7 +144,7 @@ const MainCarousel = () => {
         });
         let discount = addElement(priceContainer, "div", {
           className: "discount",
-          innerText: "-25%",
+          innerText: `- % ${Math.ceil(Math.random() * 15)}`,
           style: "font-size:20pt;",
         });
         let prices = addElement(priceContainer, "div", {
@@ -150,7 +152,7 @@ const MainCarousel = () => {
         });
         let newPrice = addElement(prices, "div", {
           className: "new-price",
-          innerText: "24.99",
+          innerText: `$ ${Math.ceil(Math.random() * 50)}.99`,
           style: "color:white;font-size:20pt",
         });
         let button = addElement(left, "button", {
@@ -244,7 +246,7 @@ const GridCarousel = () => {
     className: "row",
     style: "margin-top:25px;",
   });
-  for (let i = 5; i < 13; i++) {
+  for (let i = 6; i < 14; i++) {
     let col = addElement(row, "div", {
       className: "col-sm-3",
       style: "margin-top:25px;",
@@ -288,5 +290,162 @@ const GridCarousel = () => {
       className: "add-to-cart-button",
     });
     let icon = addElement(button, "div", { className: "fas fa-cart-plus" });
+  }
+};
+
+const Releases = () => {
+  let content = document.querySelector(".content");
+  addTitle(content, "Recommended For You", "fas fa-compass");
+  let carousel = addElement(content, "div", {
+    id: "releaseCarousel",
+    className: "carousel slide",
+  });
+  carousel.setAttribute("data-ride", "carousel");
+  let indicators = addElement(carousel, "ol", {
+    className: "carousel-indicators",
+  });
+  for (let i = 0; i < 4; i++) {
+    let li = addElement(indicators, "li", {
+      name: `indicator ${i}`,
+      className: i === 0 ? "active" : "passive",
+    });
+    li.setAttribute("data-target", "#releaseCarousel");
+    li.setAttribute("data-slide-to", i);
+  }
+  let carouselInner = addElement(carousel, "div", {
+    className: "carousel-inner",
+  });
+  for (let j = 0; j < 4; j++) {
+    let slide = addElement(carouselInner, "div", {
+      className: `carousel-item ${j === 0 ? "active" : ""}`,
+    });
+    let container = addElement(slide, "div", { className: "container" });
+    let row = addElement(container, "div", { className: "row" });
+    let col1 = addElement(row, "div", { className: "col-sm-4" });
+
+    let col2 = addElement(row, "div", { className: "col-sm-8" });
+    for (let i = 6; i < 14; i++) {
+      let col = addElement(row, "div", {
+        className: "col-sm-3",
+        style: "margin-top:25px;",
+      });
+      let card = addElement(col, "div", { className: "card" });
+      let cardMedia = addElement(card, "div", { className: "card-media" });
+      let img = addElement(cardMedia, "img", {
+        className: "card-image",
+        src: `./assets/tile (${i + j}).jpg`,
+        style: "height:150px;object-fit:cover;",
+      });
+      let title = addElement(card, "div", {
+        className: "card-title",
+        innerText: `Item ${i}`,
+      });
+      let footer = addElement(card, "div", { className: "card-footer" });
+      let platforms = addElement(footer, "div", { className: "platforms" });
+      let windows = addElement(platforms, "i", {
+        className: "fab fa-windows platform-icon",
+      });
+      let apple = addElement(platforms, "i", {
+        className: "fab fa-apple platform-icon",
+      });
+      let priceContainer = addElement(footer, "div", {
+        className: "price-container",
+      });
+      let discount = addElement(priceContainer, "div", {
+        className: "discount",
+        innerText: "-25%",
+      });
+      let prices = addElement(priceContainer, "div", { className: "prices" });
+      let oldPrice = addElement(prices, "div", {
+        className: "old-price",
+        innerText: "$85.99",
+      });
+      let newPrice = addElement(prices, "div", {
+        className: "new-price",
+        innerText: "$55.99",
+      });
+      let button = addElement(priceContainer, "button", {
+        className: "add-to-cart-button",
+      });
+      let icon = addElement(button, "div", { className: "fas fa-cart-plus" });
+    }
+  }
+};
+
+const Missed = () => {
+  let content = document.querySelector(".content");
+  addTitle(content, "Releases you might have missed", "fas fa-star");
+  let carousel = addElement(content, "div", {
+    id: "missedCarousel",
+    className: "carousel slide",
+  });
+  carousel.setAttribute("data-ride", "carousel");
+  let indicators = addElement(carousel, "ol", {
+    className: "carousel-indicators",
+  });
+  for (let i = 0; i < 3; i++) {
+    let li = addElement(indicators, "li", {
+      name: `indicator ${i}`,
+      className: i === 0 ? "active" : "passive",
+    });
+    li.setAttribute("data-target", "#missedCarousel");
+    li.setAttribute("data-slide-to", i);
+  }
+  let carouselInner = addElement(carousel, "div", {
+    className: "carousel-inner",
+  });
+  for (let j = 0; j < 3; j++) {
+    let slide = addElement(carouselInner, "div", {
+      className: `carousel-item ${j === 0 ? "active" : ""}`,
+    });
+    let container = addElement(slide, "div", { className: "container" });
+    let row = addElement(container, "div", { className: "row" });
+    let col1 = addElement(row, "div", { className: "col-sm-4" });
+    let col2 = addElement(row, "div", { className: "col-sm-8" });
+    for (let i = 6; i < 10; i++) {
+      let col = addElement(row, "div", {
+        className: "col-sm-3",
+        style: "margin-top:25px;",
+      });
+      let card = addElement(col, "div", { className: "card" });
+      let cardMedia = addElement(card, "div", { className: "card-media" });
+      let img = addElement(cardMedia, "img", {
+        className: "card-image",
+        src: `./assets/tile (${i + j}).jpg`,
+        style: "height:150px;object-fit:cover;",
+      });
+      let title = addElement(card, "div", {
+        className: "card-title",
+        innerText: `Item ${i}`,
+      });
+      let footer = addElement(card, "div", { className: "card-footer" });
+      let platforms = addElement(footer, "div", { className: "platforms" });
+      let windows = addElement(platforms, "i", {
+        className: "fab fa-windows platform-icon",
+      });
+      let apple = addElement(platforms, "i", {
+        className: "fab fa-apple platform-icon",
+      });
+      let priceContainer = addElement(footer, "div", {
+        className: "price-container",
+      });
+      let discount = addElement(priceContainer, "div", {
+        className: "discount",
+        innerText: "-25%",
+      });
+      let prices = addElement(priceContainer, "div", { className: "prices" });
+      let oldPrice = addElement(prices, "div", {
+        className: "old-price",
+        innerText: "$85.99",
+      });
+      let newPrice = addElement(prices, "div", {
+        className: "new-price",
+        innerText: "$55.99",
+      });
+      let button = addElement(priceContainer, "button", {
+        className: "add-to-cart-button",
+      });
+      let icon = addElement(button, "div", { className: "fas fa-cart-plus" });
+    }
   }
 };

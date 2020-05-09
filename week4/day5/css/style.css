@@ -36,6 +36,8 @@
   align-items: center;
   padding: 10px;
   min-height: 30px;
+  border: none;
+  background-color: transparent;
 }
 .discount {
   background-color: #78387b;
@@ -43,6 +45,8 @@
   border-radius: 2px;
   color: white;
   font-weight: bold;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .prices {
   display: flex;
@@ -98,6 +102,10 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 99999999999;
 }
 nav {
   background-color: #000;
@@ -115,6 +123,10 @@ nav {
 .navbar {
   padding: 0px;
   margin: 0px;
+  position: fixed;
+  top: 5px;
+  width: 100%;
+  z-index: 99999999999;
 }
 
 .nav-item:hover {
@@ -184,6 +196,7 @@ nav {
   opacity: 0.5;
   height: 460px;
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .carousel-image:hover {
@@ -218,4 +231,7 @@ nav {
   position: relative;
   color: white;
   padding-left: 50px;
+}
+.content {
+  margin-top: 80px;
 }
