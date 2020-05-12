@@ -21,6 +21,12 @@ function addElement(container, element, props) {
     container.appendChild(div);
   }
 
+  // props = {style:"width:200px",className:"class"}
+  /*
+
+    Object.entries(props)=> [['style','width:200px'],['className','class']]
+    
+  */
   Object.entries(props).map((entry) => {
     if (entry[0] !== "label") {
       newElement[entry[0]] = entry[1];
@@ -32,3 +38,15 @@ function addElement(container, element, props) {
   }
   return newElement;
 }
+
+const toHHMMSS = (secs) => {
+  var sec_num = parseInt(secs, 10);
+  var hours = Math.floor(sec_num / 3600);
+  var minutes = Math.floor(sec_num / 60) % 60;
+  var seconds = sec_num % 60;
+
+  return [hours, minutes, seconds]
+    .map((v) => (v < 10 ? "0" + v : v))
+    .filter((v, i) => v !== "00" || i > 0)
+    .join(":");
+};
