@@ -1,6 +1,6 @@
 # SUMMARY
 
-- Completion (%80)
+- Completion : 80%
 - Need to work on matrices
 
 
