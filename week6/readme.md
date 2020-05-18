@@ -1,3 +1,9 @@
+# SUMMARY
+
+- Completion (%80)
+- Need to work on matrices
+
+
 1. MAX CHAR
 
 Given a string, return the character that is most
