@@ -132,6 +132,10 @@ pyramid has spaces on both the left _and_ right hand sides
         '  #  '
         ' ### '
         '#####'
+        
+        
+[NOT DONE]( #)
+
 
 10. SPYRAL MATRIX
 
@@ -152,3 +156,6 @@ and returns a NxN spiral matrix.
         [12, 13, 14, 5],
         [11, 16, 15, 6],
         [10,  9,  8, 7]]
+        
+        
+[NOT DONE]( #)
