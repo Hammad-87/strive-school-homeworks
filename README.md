@@ -24,13 +24,21 @@
 - Day 2 [BOOTSTRAP](https://github.com/ubeytdemirr/strive-school-homeworks/tree/master/week3/day1)
   - [Demo : Favorite Music App](https://strivefavoritealbums.imfast.io/)
 - Day 3 [P2P WITH YANNICK](https://github.com/ubeytdemirr/strive-school-homeworks/tree/master/week3/day2/strive-p3-yannick)
-    - [Demo : Travel Agency](https://touragency.imfast.io/)
+  - [Demo : Travel Agency](https://touragency.imfast.io/)
 - Day 4 [TEAM WORK](https://github.com/ubeytdemirr/strive-school-netflix-clone-team-d)
-    - [Demo : FakeFlix](https://fakeflix.imfast.io/)
-    
+  - [Demo : FakeFlix](https://fakeflix.imfast.io/)
+
 ### WEEK 4
 
 - Day 2 [FLEX-BOX](https://github.com/ubeytdemirr/strive-school-homeworks/tree/master/week4/day2)
 - Day 4 [RE-DESIGN OF MUSIC APP (EMPTY)](https://github.com/ubeytdemirr/strive-school-homeworks/tree/master/week4/day4)
 - Day 5 [GOG.COM UI DESIGN](https://github.com/ubeytdemirr/strive-school-homeworks/tree/master/week4/day5)
   - [Demo: Gog.com](https://gogui.imfast.io/)
+
+### WEEK 5 (BUILD WEEK)
+
+[SPOTIFY UI PROJECT](https://github.com/ubeytdemirr/spotify-ui)
+
+### WEEK6
+
+- Day 1 [Advanced JS Exercises-1](./week6/)
