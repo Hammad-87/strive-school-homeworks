@@ -43,3 +43,6 @@
 
 - Day 1 [Advanced JS Exercises-1](./week6/day1/)
 - Day 2 [Promise and Fetch & Deezer API Implementation ](./week6/day2/)
+- Day 3 [Promise and Fetch & Splash API](./week6/day3/)
+- Day 4 [Promise and Fetch & Strive Book API ](./week6/day4/)
+
