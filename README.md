@@ -39,7 +39,7 @@
 
 [SPOTIFY UI PROJECT](https://github.com/ubeytdemirr/spotify-ui)
 
-### WEEK6
+### WEEK 6
 
 - Day 1 [Advanced JS Exercises-1](./week6/day1/)
 - Day 2 [Promise and Fetch & Deezer API Implementation ](./week6/day2/)
