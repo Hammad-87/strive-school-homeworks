@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Strive Books</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"></link>
+    <link rel="stylesheet" href="index.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.15/lodash.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+        integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="./index.js"></script>
+  </head>
+  <body>
+  <div class="ui fixed inverted menu">
+    <div class="ui container">
+      <a class="item" href="#">
+          <img class="ui centered small image"
+            src="https://strive.school/hosted/images/27/d1eed21e764c4aa9b9fa335c0723ed/Strive-logo_blackbg_nopayoff.png">
+            <div style="margin-top:3em;font-size:8pt;margin-right:3em;">
+              Books API
+            </div>
+          </a>
+          
+    </div>
+  </div>
+  
+  <div class="ui grid container">
+    <div class="eleven wide column">
+      <div class="ui main  container">
+        <div class="ui fluid icon input">
+          <input id="search" type="text" placeholder="Search book by name...">
+          <i class="search icon"></i>
+        </div>
+        <div class="ui items">
+      
+        </div>
+        <div class="ui right floated pagination menu">
+      
+      
+        </div>
+      </div>
+    </div>
+    <div class="five wide column">
+      <div class="ui main container">
+        <div class="cart">
+          <div class="ui segment">
+            <h3 class="ui header">
+              Cart
+            </h3>
+            <div class="ui relaxed divided list">
+                <div class="ui centered piled empty-cart">
+                  <i class="shop icon"></i>
+                  Your Cart Is Empty
+                </div>
+            </div>
+            
+            <div class="total-price">
+              <h3>Total : 0.00 €</h4>
+            </div>
+            <div>
+            <button id="empty-cart" style="margin-top:10px;" class="fluid ui basic button">Empty Cart</button>
+            <button id="proceed" style="margin-top:10px;" class="fluid ui button">Proceed to checkout
+            
+            </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div>
+  <div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <img src="https://strive.school/hosted/images/27/d1eed21e764c4aa9b9fa335c0723ed/Strive-logo_blackbg_nopayoff.png" class="ui centered medium image">
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="https://strive.school/optin32129918">Site Map</a>
+        <a class="item" href="https://strive.school/optin32129918">Contact Us</a>
+        <a class="item" href="https://strive.school/optin32129918">Terms and Conditions</a>
+        <a class="item" href="https://strive.school/optin32129918">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>

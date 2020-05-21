@@ -1,0 +1,55 @@
+body {
+  background-color: #ffffff;
+}
+.ui.menu .item img.logo {
+  margin-right: 1.5em;
+}
+.main.container {
+  margin-top: 7em;
+}
+.wireframe {
+  margin-top: 2em;
+}
+.ui.footer.segment {
+  margin: 5em 0em 0em;
+  padding: 5em 0em;
+}
+
+.logo {
+  height: 35px;
+  object-fit: center;
+}
+
+.main {
+  min-height: 100vh;
+}
+
+.items {
+  height: 100%;
+}
+.cart {
+  position: sticky;
+  top: 10%;
+}
+.actions {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.empty-cart {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.empty-cart i {
+  font-size: 25pt;
+}
+
+.list {
+  min-height: 300px;
+}
