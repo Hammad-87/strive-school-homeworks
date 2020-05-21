@@ -1,5 +1,7 @@
 # BOOKS
 
+[DEMO](https://strive-booksapi.imfast.io/)
+
 You are creating the "shopping cart experience" for a Online Marketplace.
 You have the list of the available books from the current API:
 https://striveschool.herokuapp.com/books
@@ -22,3 +24,11 @@ What you have to do is:
 - Create a second "detail page" for the product. When the user clicks on a product name, the app should redirect him to the secondary page, passing the ASIN in query string
 
 - In page "detail" show some details of the selected product
+
+## UI
+
+https://semantic-ui.com/
+
+## UTILS
+
+https://lodash.com/docs/4.17.15

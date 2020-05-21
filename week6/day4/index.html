@@ -12,24 +12,21 @@
     <script src="https://code.jquery.com/jquery-3.1.1.min.js"
         integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+    <script src="./components/index.js"></script>
     <script src="./index.js"></script>
   </head>
   <body>
   <div class="ui fixed inverted menu">
-    <div class="ui container">
+    <div class="nav">
       <a class="item" href="#">
-          <img class="ui centered small image"
-            src="https://strive.school/hosted/images/27/d1eed21e764c4aa9b9fa335c0723ed/Strive-logo_blackbg_nopayoff.png">
-            <div style="margin-top:3em;font-size:8pt;margin-right:3em;">
-              Books API
-            </div>
+          Books API
           </a>
           
     </div>
   </div>
   
-  <div class="ui grid container">
-    <div class="eleven wide column">
+  <div class="ui grid  stackable">
+    <div class="twelve wide column">
       <div class="ui main  container">
         <div class="ui fluid icon input">
           <input id="search" type="text" placeholder="Search book by name...">
@@ -44,14 +41,14 @@
         </div>
       </div>
     </div>
-    <div class="five wide column">
+    <div class="three wide column">
       <div class="ui main container">
         <div class="cart">
           <div class="ui segment">
             <h3 class="ui header">
               Cart
             </h3>
-            <div class="ui relaxed divided list">
+            <div class="ui middle aligned divided list">
                 <div class="ui centered piled empty-cart">
                   <i class="shop icon"></i>
                   Your Cart Is Empty
